@@ -81,14 +81,14 @@ body {
 	gap: 30px;
 }
 
-.menu li a {
+.menu-cta {
 	display: inline-block;
 	position: relative;
 	color: var(--primary-font-color);
 	transition: all .3s ease-in-out;
 }
 
-.menu li a::after {
+.menu-cta::after {
 	content: "";
 	position: absolute;
 	right: 0;
@@ -99,7 +99,7 @@ body {
 	transition: all .3s ease-in-out;
 }
 
-.menu li a:hover:after {
+.menu-cta:hover:after {
 	width: 100%;
 }
 
@@ -140,6 +140,29 @@ body {
   padding: 9px 22px;
   border: 1px solid #181E4B;
   border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	transition: all .3s ease-in;
+	z-index: 1;
+}
+
+.SignUp-btn::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	transition: all .3s ease-in;
+	background-color: var(--primary-font-color);
+	color: var(--font-color-white);
+	border-radius: 5px;
+	z-index: -1;
+}
+
+.SignUp-btn:hover::after {
+	width: 100%;
+	left: 0;
 }
 
 @media (max-width:768px) {
