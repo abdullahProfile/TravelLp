@@ -39,21 +39,27 @@ body {
 }
 
 .header {
-	max-width: 1200px;
+	max-width: 1440px;
 	margin-inline: auto;
 	position: relative;
-	z-index: 1;
+	padding-inline: 20px;
+	background-image: url(../assests/logo/headerBg.svg);
+	background-position-x: right;
+	background-repeat: no-repeat;
 }
 
 .header-bg-img {
 	z-index: -1;
 	float: right;
 }
+
 .nav-bar {
 	align-items: center;
 	list-style: none;
-	padding: 12px 20px;
+	padding: 12px 0;
+	margin-bottom: 18px;
 }
+
 .nav-bar li a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -227,4 +233,18 @@ body {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
+}
+
+.colored-text {
+	position: relative;
+	z-index: 99;
+}
+
+.underline {
+	width: 203px;
+	height: 18px;
+	background: var(--secondary-font-color-two);
+	bottom: 30px;
+	z-index: -1;
+	left: 11px;
 }
