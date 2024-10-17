@@ -331,3 +331,19 @@ body {
 	top: 0;
 	z-index: -1;
 }
+
+.features-content {
+	max-width: 1102px;
+}
+
+.features-content__text p{
+	font-size: var(--sm-font-size);
+	color: var(--secondary-font-color);
+	text-transform: capitalize;
+}
+
+.features-content__text h3 {
+	color: var(--primary-font-color);
+	font-size: var(--md-font-size);
+	font-weight: var(--font-weight-bold);
+}
