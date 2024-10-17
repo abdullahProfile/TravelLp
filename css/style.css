@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
---root {
+:root {
   --primary-font-color: #181E4B;
   --lg-font-size: 84px;
   --md-font-size: 50px;
   --sm-font-size: 18px;
   --secondary-font-color: #5E6282;
-  --primary-bg-color: #ffff00;
+  --primary-bg-color: #F1A501;
+	--secondary-font-color-two: #DF6951;
+	--medium-font-size:20px;
+	--font-weight-bold: 700;
+	--font-color-white: #fff;
 }
 
 body {
@@ -34,12 +38,21 @@ body {
   justify-content: space-between;
 }
 
+.header {
+	max-width: 1200px;
+	margin-inline: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.header-bg-img {
+	z-index: -1;
+	float: right;
+}
 .nav-bar {
 	align-items: center;
 	list-style: none;
 	padding: 12px 20px;
-	max-width: 1200px;
-	margin-inline: auto;
 }
 .nav-bar li a {
 	text-decoration: none;
@@ -132,5 +145,86 @@ body {
 
 	#check:checked~ .menu {
 		left: 0;
+	}
+}
+
+.header-content__text {
+	max-width: 630px;
+	gap: 30px;
+	flex-direction: column;
+}
+
+.header-content__text h4 {
+	font-size: var(--medium-font-size);
+	font-weight: var(--font-weight-bold);
+	text-transform: uppercase;
+	color: var(--secondary-font-color-two);
+}
+.header-content__text h1 {
+	font-size: var(--lg-font-size);
+	font-weight: var(--font-weight-bold);
+	text-transform: capitalize;
+	color: var(--primary-font-color);
+}
+
+.header-content__text p {
+	color: var(--secondary-font-color);
+	text-transform: capitalize;
+}
+
+.header-content__cta {
+	gap: 20px;
+}
+
+.header-content__cta-primary {
+	padding: 18px 27px;
+	background: var(--secondary-font-color-two);
+	color: var(--font-color-white);
+	text-transform: capitalize;
+	border-radius: 10px;
+	background: var(--primary-bg-color);
+	text-decoration: none;
+}
+
+.header-content__secondary-cta {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: var(--secondary-font-color-two);
+	text-align: center;
+	padding: 19px 20px;
+}
+
+.header-content__secondary-cta__content a {
+	color: var(--secondary-font-color);
+	text-decoration: none;
+}
+
+.header-content__secondary-cta__content {
+	gap: 10px;
+}
+
+.header-content__image {
+	max-width: 700px;
+}
+
+.header-content__image img {
+	width: 100%;
+}
+
+@media (max-width:768px) {
+	.header-content__text h1 {
+		font-size: 40px;
+	}
+	.header-content__cta{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width:992px) {
+	.header-content {
+		flex-direction: column-reverse;
+		align-items: center;
 	}
 }
