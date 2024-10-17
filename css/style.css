@@ -334,6 +334,10 @@ body {
 
 .features-content {
 	max-width: 1102px;
+	margin-inline: auto;
+	gap: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .features-content__text p{
@@ -346,4 +350,124 @@ body {
 	color: var(--primary-font-color);
 	font-size: var(--md-font-size);
 	font-weight: var(--font-weight-bold);
+}
+
+.features-content-text {
+	max-width: 511px;
+	flex-direction: column;
+	gap: 31px;
+}
+
+.text-container p{
+	color: var(--secondary-font-color);
+	text-transform: uppercase;
+	font-weight: var(--font-weight-bold);
+	margin-bottom: 15px;
+}
+
+.text-container h2 {
+	font-size: var(--md-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--primary-font-color);
+}
+
+.features-info {
+	flex-direction: column;
+	gap: 20px;
+}
+
+.features-info-txt {
+	gap: 20px;
+}
+.features-info-txt-icon {
+	padding: 18px;
+	background: var(--primary-bg-color);
+	border-radius: 15px;
+}
+
+.features-info-txt-description h4 {
+	color: var(--secondary-font-color);
+	font-weight: var(--font-weight-bold);
+	text-transform: capitalize;
+}
+
+.features-info-txt-description {
+	color: var(--secondary-font-color);
+}
+
+.features-icon-two {
+	background: var(--secondary-font-color-two);
+}
+
+.features-icon-three {
+	background: #006380;
+}
+
+.features-card {
+	max-width: 370px;
+	border-radius: 26px;
+	padding: 20px 25px;
+	background: var(--font-color-white);
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	position: relative;
+}
+
+.features-card-ctas {
+	flex-direction: column;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+.features-card-ctas h4 {
+	color: var(--primary-font-color);
+	font-size: var(--sm-font-size);
+}
+
+.features-card-ctas p {
+	color: var(--secondary-font-color);
+}
+
+.icon-container {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	padding: 12px;
+	background: #eeecec;
+}
+
+.features-card-ctas-secondary-cta a {
+	text-decoration: none;
+	color: var(--secondary-font-color);
+}
+
+.features-card-icons {
+	gap: 10px;
+}
+
+.card-two-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.card-two-text p {
+	color: var(--secondary-font-color);
+}
+
+.card-two-text h5 {
+	color: var(--primary-font-color);
+}
+
+.text-span {
+	color: #8A79DF;
+}
+
+.features-card-card__two {
+	gap: 20px;
+	background-color: var(--font-color-white);
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	right: -54px;
+  bottom: 74px;
+	padding: 16px 20px;
+	border-radius: 10px;
 }
