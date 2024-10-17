@@ -139,6 +139,7 @@ body {
 .SignUp-btn {
   padding: 9px 22px;
   border: 1px solid #181E4B;
+	color: var(--primary-font-color);
   border-radius: 5px;
 	display: inline-block;
 	position: relative;
