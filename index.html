@@ -61,13 +61,24 @@
     </div>
   </header>
 
-  <section class="categoreis-section">
+  <!-- Go through your classes once more and check your spellings (Remove this comment after problem resolved)-->
+
+  <section class="categoreis-section"> 
     <div class="categoreis-section__content flex align-item-center">
       <img src="../assests/icons/cardHero.svg" class="categoreis-section-img absolute" alt="img">
       <div class="categoreis-section__content-text">
+
+        <!-- The p tag with text CATEGORY might be better as a heading tag 
+         for better structure: <h4>CATEGORY</h4>
+        -->
         <p>CATEGORY</p>
         <h3>We Offer Best Services</h3>
       </div>
+
+      <!-- alt should always be generic, 
+       which should be realted to the image not just a random word, you have used img for all the alts 
+       (READ WHAT ABOUT ALT, WHAT ALT IS USED FOR)
+      -->
 
       <div class="categoreis-section__content-cards flex align-item-center">
         <div class="card flex align-item-center">
@@ -112,11 +123,14 @@
     </div>
   </section>
 
+
   <section class="features">
     <div class="features-content flex">
 
       <div class="features-content-text flex">
         <div class="text-container">
+
+          <!-- Replace <p> with <h3> (or h4, h5 depending on your preference) -->
           <p>Easy and Fast</p>
           <h2>Book your next trip in 3 easy steps</h2>
         </div>
@@ -129,6 +143,7 @@
               </svg>
             </span>
 
+            <!-- USE BEM METHOD FOR CLASSES (watch a tutorial on bem and implement it in your projects) -->
             <span class="features-info-txt-description">
               <h4>Choose Destination</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
